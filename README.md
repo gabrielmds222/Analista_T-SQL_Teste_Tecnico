@@ -1,0 +1,1 @@
+# Analista_T-SQL_Teste_Tecnico

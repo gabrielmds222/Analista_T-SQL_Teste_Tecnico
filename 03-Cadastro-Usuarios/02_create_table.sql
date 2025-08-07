@@ -1,0 +1,11 @@
+USE CadastroUsuariosDB;
+GO
+
+CREATE TABLE USUARIOS  (
+    usuarioId INT IDENTITY(1,1) PRIMARY KEY,
+    Nome NVARCHAR(100),
+    Email NVARCHAR(100),
+    CPF VARCHAR(11) UNIQUE,
+    Senha VARCHAR(32),
+    Ativo CHAR(1)
+);

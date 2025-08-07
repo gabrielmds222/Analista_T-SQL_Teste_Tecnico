@@ -1,0 +1,19 @@
+CREATE DATABASE IndicesDB;
+GO
+
+USE IndicesDB;
+GO
+
+CREATE TABLE Clientes (
+	CPF CHAR(11) PRIMARY KEY,
+	Nome NVARCHAR(100),
+	Telefone VARCHAR(20)
+);
+
+CREATE TABLE Lancamentos(
+	Id INT IDENTITY(1,1) PRIMARY KEY,
+	CPF CHAR(11),
+	Valor DECIMAL(10,2),
+	Tipo VARCHAR(20),
+	Data DATE
+);

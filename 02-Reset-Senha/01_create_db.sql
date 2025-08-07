@@ -1,0 +1,5 @@
+CREATE DATABASE ResetSenhaDB;
+GO
+
+USE ResetSenhaDB;
+GO

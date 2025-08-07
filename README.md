@@ -27,27 +27,34 @@ Para executar os scripts deste repositório, você precisa:
 
 ---
 
-## 📦 Clonando o Repositório
+## ▶️ Passo a passo para rodar as questões
 
-```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-```
+1. **Clone o repositório:**
 
-Ou baixe diretamente o `.zip` pelo GitHub.
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+
+2. **Abra o SSMS** e conecte-se à sua instância local do SQL Server.
+
+3. **Para executar uma questão:**
+
+   - Vá em `Arquivo > Abrir > Arquivo`.
+   - Selecione **todos os arquivos `.sql` da pasta** da questão desejada (por exemplo, `questao-02/`).
+   - Os arquivos serão abertos em abas separadas.
+   - **Execute os arquivos em ordem numérica (ex: 01_..., depois 02_..., etc)** para garantir que tudo funcione corretamente.
 
 ---
 
-## ▶️ Como Executar Cada Questão
+## ⚠️ Observações
 
-Cada questão está em uma **pasta separada** com:
+- **Questão 5**: Como envolve múltiplas consultas dentro do mesmo arquivo (`05_Consultas.sql`), execute os blocos **separadamente** usando o botão `! Executar` apenas com o bloco desejado selecionado.
 
-- ✅ Arquivo `.sql` com todos os comandos necessários
-- ✅ Um `README.md` com:
-  - A descrição da questão
-  - Instruções passo a passo para rodar no SSMS
-- ▶️ Um **vídeo tutorial explicativo**, mostrando a execução em tempo real e as decisões adotadas.
+- Todas as queries são comentadas e organizadas para facilitar a execução passo a passo.
 
+- Para cada questão há um **vídeo tutorial** correspondente (link nos comentários de cada arquivo `.sql`).
+
+---
 
 ## 🎥 Tutoriais em Vídeo
 

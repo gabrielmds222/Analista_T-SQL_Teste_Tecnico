@@ -1,0 +1,33 @@
+Nesse arquivos vamos conferir o comparativo do tempo de execução da consulta original e da consulta com os índices.
+
+- Consulta Original:
+ Tempos de Execução do SQL Server:
+ Tempo de CPU = 0 ms, tempo decorrido = 0 ms.
+
+(2 linhas afetadas)
+Tabela 'Lancamentos'. Contagem de verificações 1, leituras lógicas 290, leituras físicas 1, leituras de servidor de páginas 0, leituras antecipadas 288, leituras antecipadas de servidor de páginas 0, leituras lógicas de LOB 0, leituras físicas de LOB 0, leituras de servidor de páginas LOB 0, leituras antecipadas de LOB 0, leituras antecipadas do servidor de páginas LOB 0.
+Tabela 'Clientes'. Contagem de verificações 0, leituras lógicas 2, leituras físicas 2, leituras de servidor de páginas 0, leituras antecipadas 0, leituras antecipadas de servidor de páginas 0, leituras lógicas de LOB 0, leituras físicas de LOB 0, leituras de servidor de páginas LOB 0, leituras antecipadas de LOB 0, leituras antecipadas do servidor de páginas LOB 0.
+
+ Tempos de Execução do SQL Server:
+ Tempo de CPU = 0 ms, tempo decorrido = 7 ms.
+
+Horário de conclusão: 2025-08-07T09:08:14.3524508-03:00
+
+
+- Consula com o Índices:
+Tempo de análise e compilação do SQL Server: 
+   Tempo de CPU = 0 ms, tempo decorrido = 11 ms.
+
+(2 linhas afetadas)
+Tabela 'Lancamentos'. Contagem de verificações 1, leituras lógicas 6, leituras físicas 1, leituras de servidor de páginas 0, leituras antecipadas 0, leituras antecipadas de servidor de páginas 0, leituras lógicas de LOB 0, leituras físicas de LOB 0, leituras de servidor de páginas LOB 0, leituras antecipadas de LOB 0, leituras antecipadas do servidor de páginas LOB 0.
+Tabela 'Clientes'. Contagem de verificações 0, leituras lógicas 2, leituras físicas 2, leituras de servidor de páginas 0, leituras antecipadas 0, leituras antecipadas de servidor de páginas 0, leituras lógicas de LOB 0, leituras físicas de LOB 0, leituras de servidor de páginas LOB 0, leituras antecipadas de LOB 0, leituras antecipadas do servidor de páginas LOB 0.
+
+ Tempos de Execução do SQL Server:
+ Tempo de CPU = 0 ms, tempo decorrido = 2 ms.
+
+Horário de conclusão: 2025-08-07T09:15:03.5858093-03:00
+
+
+- Resultado:
+A partir desses logs podemos conferir que a consulta original fazia 290 leituras lógicas, ou seja, passava por um número grande de linhas antes de achar o valor desejado.
+Já na consulta utilizando índices, esse número de leituras caiu para 6. Essa diminuição proporcionou a diminuição do tempo de execução da consulta de 7ms, para 2ms, comprovando que o uso de índices torna a consulta mais otimizada.

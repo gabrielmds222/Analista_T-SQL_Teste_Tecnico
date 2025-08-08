@@ -11,7 +11,7 @@ SET STATISTICS TIME ON;
 SELECT C.CPF, C.Nome, C.Telefone, L.Valor, L.Tipo, L.Data
 FROM Clientes C
 INNER JOIN Lancamentos L ON C.CPF = L.CPF
-WHERE
-	C.CPF = '70015423121'
-	AND L.Data >= '2007-07-01'
-    AND L.Data <  '2007-08-01';
+WHERE 
+    C.CPF = '70015423121'
+    AND L.Data >= '2007-01-01'
+    AND L.Data < '2008-01-01';

@@ -56,16 +56,16 @@ Para executar os scripts deste repositório, você precisa:
 
 ---
 
-## 🎥 Tutoriais em Vídeo
+## Demonstrações em Vídeo
 
-Cada questão possui um vídeo tutorial explicando:
+Gravei a execução e explicação das soluções no Loom.  
+Clique nos links abaixo para assistir:
 
-- Contexto da questão
-- Explicação dos scripts
-- Execução dos comandos no SSMS
-- Validação dos resultados
-
-Você encontrará o link dos vídeos no respectivo `README.md` de cada questão.
+- [Questão 1 - Fila de Execução de tarefas](https://www.loom.com/share/7eca843a5d044f59bfd2881bbfc0a834?sid=2a64d898-8809-4c6e-901a-92559f264b56)
+- [Questão 2 - Reset de senha e criptografia](https://www.loom.com/share/0887a28a53f04f30a95b39bbaf8f663d?sid=a1a6c836-a9a4-4c72-ba90-a3eb719d16d8)
+- [Questão 3 - Cadastro de usuário e criptografia](https://www.loom.com/share/6684eb49e8794f809988817badd7c193?sid=2b945cec-6463-41b3-9cb9-d04fd252bcf4)
+- [Questão 4 - Otimização de consulta com índices](https://www.loom.com/share/7ae0b9a7c72749dab3137e58c1c7e8ff?sid=dae1cf8b-14d6-4898-bbfa-45a7ab0266ab)
+- [Questão 5 - Modelagem e análises de dados de um banco de dados de vendas](https://www.loom.com/share/764cd9af62fd428e88c54432b2c66de2?sid=c67069bb-c25f-4cee-aa9a-63d883e943d5)
 
 ---
 

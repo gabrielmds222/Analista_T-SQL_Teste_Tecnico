@@ -5,6 +5,9 @@
 -- * Listar todas as notas fiscais emitidas em um determinado per�odo.
 
 -- Pergunta 1. Listar todos os produtos vendidos em uma data espec�fica.
+USE SistemaVendasDB;
+GO
+
 SELECT
     P.PRODUTO_ID,
     P.NOME,
@@ -23,6 +26,8 @@ WHERE
 
 
 -- Pergunta 2. Calcular o total de vendas de um cliente espec�fico.
+USE SistemaVendasDB;
+GO
 
 SELECT
     C.CLIENTE_ID,
@@ -40,6 +45,8 @@ GROUP BY
 
 
 --Pergunta 3. Encontrar o produto mais vendido.
+USE SistemaVendasDB;
+GO
 
 SELECT TOP 1
     P.PRODUTO_ID,
@@ -53,6 +60,8 @@ ORDER BY TOTAL_VENDIDO DESC;
 
 
 --Pergunta 4. Listar todas as notas fiscais emitidas em um determinado per�odo.
+USE SistemaVendasDB;
+GO
 
 SELECT
     NF.NUMERO_NOTA,

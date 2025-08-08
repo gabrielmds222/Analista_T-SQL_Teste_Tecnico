@@ -1,3 +1,6 @@
+USE ResetSenhaDB;
+GO
+
 CREATE PROCEDURE stpResetSenha
 	@JsonData NVARCHAR(MAX)
 AS
@@ -23,7 +26,7 @@ SET NOCOUNT ON;
 
 		IF @UsuarioId IS NULL
 		BEGIN 
-			RAISERROR('Usuário não encontrado ou está Inativo/Bloqueado', 16, 1);
+			RAISERROR('Usuï¿½rio nï¿½o encontrado ou estï¿½ Inativo/Bloqueado', 16, 1);
 			ROLLBACK TRANSACTION;
 			RETURN;
 		END

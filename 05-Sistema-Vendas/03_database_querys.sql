@@ -1,11 +1,10 @@
--- Nesse arquivo irei responder por meio de consultas no banco de dados as perguntas do nosso problema de negócios. São elas:
--- * Listar todos os produtos vendidos em uma data específica.
--- * Calcular o total de vendas de um cliente específico.
+-- Nesse arquivo irei responder por meio de consultas no banco de dados as perguntas do nosso problema de negï¿½cios. Sï¿½o elas:
+-- * Listar todos os produtos vendidos em uma data especï¿½fica.
+-- * Calcular o total de vendas de um cliente especï¿½fico.
 -- * Encontrar o produto mais vendido.
--- * Listar todas as notas fiscais emitidas em um determinado período.
+-- * Listar todas as notas fiscais emitidas em um determinado perï¿½odo.
 
--- Pergunta 1. Listar todos os produtos vendidos em uma data específica.
-
+-- Pergunta 1. Listar todos os produtos vendidos em uma data especï¿½fica.
 SELECT
     P.PRODUTO_ID,
     P.NOME,
@@ -23,7 +22,7 @@ WHERE
 
 
 
--- Pergunta 2. Calcular o total de vendas de um cliente específico.
+-- Pergunta 2. Calcular o total de vendas de um cliente especï¿½fico.
 
 SELECT
     C.CLIENTE_ID,
@@ -53,7 +52,7 @@ ORDER BY TOTAL_VENDIDO DESC;
 
 
 
---Pergunta 4. Listar todas as notas fiscais emitidas em um determinado período.
+--Pergunta 4. Listar todas as notas fiscais emitidas em um determinado perï¿½odo.
 
 SELECT
     NF.NUMERO_NOTA,

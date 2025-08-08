@@ -1,3 +1,6 @@
+USE ResetSenhaDB;
+GO
+
 DECLARE @Json NVARCHAR(MAX) = 
 
 '{

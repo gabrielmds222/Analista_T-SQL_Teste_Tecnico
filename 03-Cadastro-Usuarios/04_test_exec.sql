@@ -1,3 +1,6 @@
+USE CadastroUsuariosDB;
+GO
+
 DECLARE @Json NVARCHAR(MAX) = '
 {
   "Nome": "Maria dos Anjos",

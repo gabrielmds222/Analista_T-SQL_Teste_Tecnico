@@ -1,3 +1,6 @@
+USE FilaTarefasDB;
+GO
+
 CREATE PROCEDURE ExecutarTarefas
     @Quantidade INT = 5
 AS
